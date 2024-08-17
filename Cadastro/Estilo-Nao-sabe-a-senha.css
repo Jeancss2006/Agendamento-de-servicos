@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: "Moderustic", sans-serif;
+}
+body {
+    background-color: lightgray;
+}
+body > h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+main {
+    background-color: white;
+    width: 450px;
+    height: 350px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 8px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.332);
+    position: relative;
+}
+main > h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 10px;
+}
+main > h3 {
+    margin: 15px;
+    font-size: 1.3rem;
+}
+main > input {
+    width: 350px;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+main > input:hover {
+    border: 1px solid black;
+}
+main > input::placeholder {
+    padding-left: 10px;
+    font-size: 1rem;
+}
+main > p {
+    color: lightslategray;
+    font-size: 0.8rem;
+    margin: 10px 0px 20px 15px;
+    display: none;
+}
+main > input#recuperar {
+    width: 150px;
+    margin-top: 15px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    background-color: rgba(0, 255, 123, 0.847);
+}
+main > input#recuperar:hover{
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.659);
+    transform: translate(-2px, -2px);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+main > input#cancelar {
+    width: 150px;
+    margin: 15px;
+    position: absolute;
+    right: 160px;
+    margin-right: 10px;
+}
+main > input#cancelar:hover{
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.659);
+    transform: translate(-2px, -2px);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
