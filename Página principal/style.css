@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: "Moderustic", sans-serif;
+}
+header {
+    background-color: black;
+}
+
+div#navegadores{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div#logo-p > p{
+    align-items: center;
+    display: inline;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+nav > a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(185, 183, 183);
+}
+nav > a#pg-atual{
+    color: white;
+    font-weight: bold;
+}
+nav > a:hover{
+    color: white;
+}
+div#logo-g{
+    text-align: center;
+}
+main{
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+}
+div#loja {
+    background-color: white;
+    padding: 40px;
+    width: 350px;
+}
+div#loja > h1 {
+    font-size: 3rem;
+    color: rgb(109, 109, 109);
+    margin: 15px 15px 15px 0px;
+}
+div#loja > p {
+    text-align: justify;
+    font-size: 0.8rem;
+}
+div#foto-da-loja {
+    background-color: black;
+    margin: 30px 0px 15px 30px;
+}
+div#foto-da-loja > img {
+
+}
