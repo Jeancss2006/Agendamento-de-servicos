@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: "Moderustic", sans-serif;
+}
+header {
+    background-color: black;
+}
+
+div#navegadores{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+    height: 30px;
+}
+div#logo-p > p{
+    align-items: center;
+    display: inline;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+nav > a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(185, 183, 183);
+}
+nav > a#pg-atual{
+    color: white;
+    font-weight: bold;
+}
+nav > a:hover{
+    color: white;
+}
+div#logo-g{
+    text-align: center;
+}
+.container-escolha {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+div#serviço-escolha {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+div#serviço-escolha > img {
+    width: 100%;
+    max-width: 500px;
+}
+button#anterior {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button#posterior {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

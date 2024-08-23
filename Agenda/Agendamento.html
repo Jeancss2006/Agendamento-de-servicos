@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="Estilo-agendamento.css">
+</head>
+<body>
+    <div id="navegadores">
+        <div id="logo-p">
+        <img src="../imagens/logo microsoft pequena (teste).png" alt="Logo da empresa" width="40px">
+        <p>Nome da empresa</p>
+        </div>
+        <nav>
+        <a href="../Página principal/index.html" >Home</a>
+        <a href="#">Loja</a>
+        <a href="#" id="pg-atual">Agende</a>
+        </nav>
+    </div>
+    <header>
+        <div id="logo-g">
+            <img src="../imagens/logo microsoft (teste).png" alt="Logo da empresa" width="400px">
+        </div>
+    </header>
+    <main>
+        <h1>Agende o seu serviço</h1>
+        <section>
+            <h3>Escolha o serviço</h3>
+            <div class="container-escolha">
+                <button id="anterior" onclick="moveSlide(-1)">&#10094</button>
+                <div id="serviço-escolha">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Corte & sombrancelha">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Corte">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Corte + Barba">
+                    <img src="../imagens/logo microsoft (teste).png" alt="">
+                    <img src="../imagens/logo microsoft (teste).png" alt="">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Platinado">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Relaxamento">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Luzes">
+                    <img src="../imagens/logo microsoft (teste).png" alt="Barba">
+                </div>
+                <button id="posterior" onclick="moveSlide(1)" >&#10095</button>
+            </div>
+            <h3>Escolha o Cabeleleiro:</h3>
+            <h3>Escolha o Dia:</h3>
+        </section>
+    </main>
+    <script>
+        let slideDirection = 0;
+
+        function moveSlide(direction) {
+            const slide = document.querySelector('div#serviço-escolha')
+            const totalslides = slide.querySelectorAll('img').length;
+
+            slideDirection += direction;
+
+            if (slideDirection < 0) {
+                slideDirection = totalslides - 1;
+            } else if (slideDirection >= totalslides) {
+                slideDirection = 0;
+            }
+            const slideWidth = slide.querySelector('img').clientWidth;
+            slide.style.transform = `translateX(${-slideDirection * slideWidth}px)`;
+        }
+    </script>
+</body>
+</html>

@@ -16,9 +16,11 @@ div#navegadores{
     background-color: black;
     color: white;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    
+    height: 30px;
+    width: 99%;
 }
 div#logo-p > p{
     align-items: center;
@@ -37,6 +39,10 @@ nav > a#pg-atual{
 }
 nav > a:hover{
     color: white;
+}
+img#user{
+    
+    
 }
 div#logo-g{
     text-align: center;
