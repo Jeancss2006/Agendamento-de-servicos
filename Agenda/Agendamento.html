@@ -28,7 +28,7 @@
         <section>
             <h3>Escolha o serviço</h3>
             <div class="container-escolha">
-                <button id="anterior" onclick="moveSlide(-1)">&#10094</button>
+                <button id="anterior">&#10094</button>
                 <div id="serviço-escolha">
                     <img src="../imagens/logo microsoft (teste).png" alt="Corte & sombrancelha">
                     <img src="../imagens/logo microsoft (teste).png" alt="Corte">
@@ -40,28 +40,37 @@
                     <img src="../imagens/logo microsoft (teste).png" alt="Luzes">
                     <img src="../imagens/logo microsoft (teste).png" alt="Barba">
                 </div>
-                <button id="posterior" onclick="moveSlide(1)" >&#10095</button>
+                <button id="posterior">&#10095</button>
             </div>
-            <h3>Escolha o Cabeleleiro:</h3>
+            <h3 id="teste">Escolha o Cabeleleiro:</h3>
             <h3>Escolha o Dia:</h3>
         </section>
     </main>
     <script>
-        let slideDirection = 0;
-
-        function moveSlide(direction) {
-            const slide = document.querySelector('div#serviço-escolha')
-            const totalslides = slide.querySelectorAll('img').length;
-
-            slideDirection += direction;
-
-            if (slideDirection < 0) {
-                slideDirection = totalslides - 1;
-            } else if (slideDirection >= totalslides) {
-                slideDirection = 0;
+        document.getElementById('anterior').addEventListener('click', moveleft)
+        document.getElementById('posterior').addEventListener('click', moveright)
+        var slide = document.querySelector('div#serviço-escolha')
+        var totalslides = slide.querySelectorAll('img').length;
+        var slideWidth = slide.querySelector('img').clientWidth;
+        var acumulador = 0
+        
+        function moveright() {
+            acumulador += 1
+            if(acumulador <= totalslides - 1) { 
+                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
+            } else if(acumulador == totalslides) {
+                acumulador = 0
+                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
             }
-            const slideWidth = slide.querySelector('img').clientWidth;
-            slide.style.transform = `translateX(${-slideDirection * slideWidth}px)`;
+        }
+        function moveleft() {
+            acumulador -= 1
+            if(acumulador >= 0) {
+                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
+            } else if(acumulador == -1) {
+                acumulador = (totalslides - 1)
+                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
+            }
         }
     </script>
 </body>
