@@ -25,20 +25,40 @@
     </header>
     <main>
         <h1>Agende o seu serviço</h1>
+        <hr id="corte">
         <section>
             <h3>Escolha o serviço</h3>
             <div class="container-escolha">
                 <button id="anterior">&#10094</button>
                 <div id="serviço-escolha">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Corte & sombrancelha">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Corte">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Corte + Barba">
-                    <img src="../imagens/logo microsoft (teste).png" alt="">
-                    <img src="../imagens/logo microsoft (teste).png" alt="">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Platinado">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Relaxamento">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Luzes">
-                    <img src="../imagens/logo microsoft (teste).png" alt="Barba">
+                    <div class="escolha" onclick="Escolha(0)" id="serv0">
+                        <img src="../imagens/corte + sombrancelha f.jpg" alt="Corte & sombrancelha">
+                        <div class="escolhatxt" id="serv">Corte & sombrancelha</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(1)">
+                        <img src="../imagens/corte de cabelo f.jpg" alt="Corte">
+                        <div class="escolhatxt">Corte</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(2)">
+                        <img src="../imagens/Corte + barba f.jpg" alt="Corte + Barba">
+                        <div class="escolhatxt">Corte + Barba</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(3)">
+                        <img src="../imagens/platinado f.jpg" alt="Platinado">
+                        <div class="escolhatxt">Platinado</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(4)">
+                        <img src="../imagens/Relaxamento f.jpg" alt="Relaxamento">
+                        <div class="escolhatxt">Relaxamento</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(5)">
+                        <img src="../imagens/Luzes f.jpg" alt="Luzes">
+                        <div class="escolhatxt">Luzes</div>
+                    </div>
+                    <div class="escolha" onclick="Escolha(6)">
+                        <img src="../imagens/Barba f.jpg" alt="Barba">
+                        <div class="escolhatxt">Barba</div>
+                    </div>
                 </div>
                 <button id="posterior">&#10095</button>
             </div>
@@ -46,32 +66,6 @@
             <h3>Escolha o Dia:</h3>
         </section>
     </main>
-    <script>
-        document.getElementById('anterior').addEventListener('click', moveleft)
-        document.getElementById('posterior').addEventListener('click', moveright)
-        var slide = document.querySelector('div#serviço-escolha')
-        var totalslides = slide.querySelectorAll('img').length;
-        var slideWidth = slide.querySelector('img').clientWidth;
-        var acumulador = 0
-        
-        function moveright() {
-            acumulador += 1
-            if(acumulador <= totalslides - 1) { 
-                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
-            } else if(acumulador == totalslides) {
-                acumulador = 0
-                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
-            }
-        }
-        function moveleft() {
-            acumulador -= 1
-            if(acumulador >= 0) {
-                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
-            } else if(acumulador == -1) {
-                acumulador = (totalslides - 1)
-                slide.style.transform = `translateX(${-acumulador * slideWidth}px)`
-            }
-        }
-    </script>
+    <script src="script-agendamento.js"></script>
 </body>
 </html>
