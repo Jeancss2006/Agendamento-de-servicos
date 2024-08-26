@@ -58,8 +58,9 @@ main > h1 {
     font-weight: 400;
     font-style: normal;
 }
-hr#corte {
-    border: 2px solid black;
+.repartição {
+    margin-top: 35px;
+    border-bottom: 20px solid white;
 }
 section {
     background-color: black;
@@ -71,11 +72,12 @@ section > h3 {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    
 }
-.container-escolha {
+.container-escolha1 {
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 700px;
     height: 100%;
     min-height: 30px;
     overflow: hidden;
@@ -86,18 +88,23 @@ div#serviço-escolha {
     transition: transform 0.5s ease-in-out;
 }
 .escolha > img {
+    display: block;
+    object-fit: cover;
     width: 100%;
     height: 90%;
 }
 .escolha {
     border: 2px solid white;
-    min-width: 100%;
+    background-color: white;
+    flex: 0 0 47.5%;
+    margin-right: 20px;
     position: relative;
     box-sizing: border-box;
     cursor: pointer;
+    
 }
 .escolhatxt {
-    background-color: white;
+    background-color: transparent;
     color: black;
     width: 287px;
     height: 35px;
@@ -109,12 +116,13 @@ div#serviço-escolha {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 button#anterior {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5px;
+    left: 15px;
     padding: 10px;
     border: none;
     background-color: black;
@@ -127,7 +135,7 @@ button#posterior {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 5px;
+    right: 15px;
     padding: 10px;
     border: none;
     background-color: black;

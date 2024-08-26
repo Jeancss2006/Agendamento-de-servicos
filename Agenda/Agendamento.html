@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
-    <link rel="stylesheet" href="Estilo-agendamento.css">
+    <link rel="stylesheet" href="Estilo-agendamento (basicos + ESCOLHA1).css">
+    <link rel="stylesheet" href="Estilo-agendamento (ESCOLHA2).css">
 </head>
 <body>
     <div id="navegadores">
@@ -25,44 +26,62 @@
     </header>
     <main>
         <h1>Agende o seu serviço</h1>
-        <hr id="corte">
-        <section>
+        <section id="sec-inteira">
             <h3>Escolha o serviço</h3>
-            <div class="container-escolha">
+            <div class="container-escolha1">
                 <button id="anterior">&#10094</button>
                 <div id="serviço-escolha">
-                    <div class="escolha" onclick="Escolha(0)" id="serv0">
+                    <div class="escolha" onclick="Escolha0(0)" id="serv0">
                         <img src="../imagens/corte + sombrancelha f.jpg" alt="Corte & sombrancelha">
-                        <div class="escolhatxt" id="serv">Corte & sombrancelha</div>
+                        <div class="escolhatxt" id="txt0">Corte & sombrancelha</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(1)">
+                    <div class="escolha" onclick="Escolha0(1)">
                         <img src="../imagens/corte de cabelo f.jpg" alt="Corte">
-                        <div class="escolhatxt">Corte</div>
+                        <div class="escolhatxt" id="txt1">Corte</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(2)">
+                    <div class="escolha" onclick="Escolha0(2)">
                         <img src="../imagens/Corte + barba f.jpg" alt="Corte + Barba">
-                        <div class="escolhatxt">Corte + Barba</div>
+                        <div class="escolhatxt" id="txt2">Corte + Barba</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(3)">
+                    <div class="escolha" onclick="Escolha0(3)">
                         <img src="../imagens/platinado f.jpg" alt="Platinado">
-                        <div class="escolhatxt">Platinado</div>
+                        <div class="escolhatxt" id="txt3">Platinado</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(4)">
+                    <div class="escolha" onclick="Escolha0(4)">
                         <img src="../imagens/Relaxamento f.jpg" alt="Relaxamento">
-                        <div class="escolhatxt">Relaxamento</div>
+                        <div class="escolhatxt" id="txt4">Relaxamento</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(5)">
+                    <div class="escolha" onclick="Escolha0(5)">
                         <img src="../imagens/Luzes f.jpg" alt="Luzes">
-                        <div class="escolhatxt">Luzes</div>
+                        <div class="escolhatxt" id="txt5">Luzes</div>
                     </div>
-                    <div class="escolha" onclick="Escolha(6)">
+                    <div class="escolha" onclick="Escolha0(6)">
                         <img src="../imagens/Barba f.jpg" alt="Barba">
-                        <div class="escolhatxt">Barba</div>
+                        <div class="escolhatxt" id="txt6">Barba</div>
                     </div>
                 </div>
                 <button id="posterior">&#10095</button>
             </div>
+            <hr class="repartição">
             <h3 id="teste">Escolha o Cabeleleiro:</h3>
+            <div class="container-escolha2">
+                <button id="anterior-cabe">&#10094</button>
+                <div id="cabeleleiro-escolha">
+                    <div class="escolha-cabe" onclick="Escolha1(0)">
+                        <img src="../imagens/Cabeleleiro 1.jpg" alt="">
+                        <div class="escolha-cabetxt" id="txt1-0">Cabeleleiro 1</div>
+                    </div>
+                    <div class="escolha-cabe" onclick="Escolha1(1)">
+                        <img src="../imagens/cabeleleiro 2.jpg" alt="">
+                        <div class="escolha-cabetxt" id="txt1-1">Cabeleleiro 2</div>
+                    </div>
+                    <div class="escolha-cabe" onclick="Escolha1(2)">
+                        <img src="../imagens/cabeleleiro 3.jpg" alt="">
+                        <div class="escolha-cabetxt" id="txt1-2">Cabeleleiro 3</div>
+                    </div>
+                </div>
+                <button id="posterior-cabe">&#10095</button>
+            </div>
             <h3>Escolha o Dia:</h3>
         </section>
     </main>
