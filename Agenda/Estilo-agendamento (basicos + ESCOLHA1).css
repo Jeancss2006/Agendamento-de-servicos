@@ -92,9 +92,12 @@ div#serviço-escolha {
     object-fit: cover;
     width: 100%;
     height: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .escolha {
     border: 2px solid white;
+    border-radius: 10px;
     background-color: white;
     flex: 0 0 47.5%;
     margin-right: 20px;
