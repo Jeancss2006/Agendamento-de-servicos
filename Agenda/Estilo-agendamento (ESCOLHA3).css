@@ -13,19 +13,37 @@ div#dia-escolha {
 }
 .dia-escolha{
     text-align: center;
+    font-style: italic;
     position: relative;
-    min-width: 16.8%;
+    min-width: 17.5%;
     border: 3px solid gray;
     border-radius: 10px;
     background-color: white;
     color: black;
     padding: 5px;
     margin: 5px;
+    cursor: pointer;
+}
+@media (max-width: 950px) {
+    .dia-escolha {
+        min-width: 18.2%;
+        padding: 1px;
+    }
+}
+@media (max-width: 800px){
+    .dia-escolha {
+        min-width: 30.5%;
+        padding: 3px;
+}
+@media (max-width: 700px) {
+    .dia-escolha {
+        padding: 0px;
+    }
+}
 }
 .dia-escolha > h1 {
     font-size: 2.1rem;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 .dia-escolha > h3 {
     margin-top: 8px;

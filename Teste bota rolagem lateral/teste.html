@@ -4,38 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 </head>
 <body>
-    <div class="carousel-container">
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <div class="carousel-slide">
-            <img src="../imagens/logo microsoft (teste).png" alt="Imagem 1">
-            <img src="../imagens/logo microsoft (teste).png"alt="Imagem 2">
-            <img src="../imagens/logo microsoft (teste).png" alt="Imagem 3">
-            <!-- Adicione mais imagens aqui -->
-        </div>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div id="datepicker" style="width: 500px; height: 500px; border: 1px solid black;">
         
     </div>
+    
     <script>
-        let slideIndex = 0;
-
-    function moveSlide(direction) {
-        const slides = document.querySelector('.carousel-slide');
-        const totalSlides = slides.querySelectorAll('img').length;
-        
-        slideIndex += direction;
-
-        if (slideIndex < 0) {
-            slideIndex = totalSlides - 1;
-        } else if (slideIndex >= totalSlides) {
-            slideIndex = 0;
-        }
-
-        const slideWidth = slides.querySelector('img').clientWidth;
-        slides.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
-}
+      var picker = new Pikaday({ field: document.getElementById('datepicker') });
     </script>
+    
+</script>
 </body>
 </html>
