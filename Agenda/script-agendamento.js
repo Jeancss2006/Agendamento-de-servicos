@@ -110,7 +110,6 @@ function Escolha0(numEscolha0) {
             txt6.style.textDecoration = 'underline'
         } break
     }
-    
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // SISTEMA DE SLIDES PROFISSIONAL
@@ -350,6 +349,417 @@ function Escolha1 (numEscolha1) {
             
     })
 ///////////////////////////////////////////////////////////////////////////////////////////////
-// SISTEMA DE ESCOLHA DIAS
-
-
+// SISTEMA DE BLOQUEIO DE DIAS
+    
+    divtxt.forEach(function(h1Element){
+        if(h1Element.textContent === 'Domingo') {
+            h1Element.style.color = 'darkgray';
+            h1Element.style.textDecoration = 'line-through'
+        }
+        if(h1Element.textContent === 'Segunda') {
+            h1Element.style.color = 'darkgray'
+            h1Element.style.textDecoration = 'line-through'
+        }
+    });
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// SISTEMA DE ESCOLHA DE DIAS    
+function Escolha2(numEscolha2) {
+    slide2 
+    let escolhadia = slide2.querySelectorAll('.dia-escolha')
+    let escolhahora = document.querySelectorAll('.hora-escolha')
+    let horaArray = Array.from(escolhahora)
+    escolhadia.forEach((div, valor) => {
+        div.style.background = 'gray'
+        div.style.border = '4px solid rgb(148, 145, 145)'
+        div.id = 'div2-' + (valor)
+    })
+    
+    divtxt.forEach((h1, valor) =>{
+        h1.id = 'divtxt2-' + (valor)
+    })
+    switch(numEscolha2) {
+        case 1: {
+            let div20 = document.getElementById('div2-0')
+            let divtxt2 = document.getElementById('divtxt2-0')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 2: {
+            let div20 = document.getElementById('div2-1')
+            let divtxt2 = document.getElementById('divtxt2-1')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 3: {
+            let div20 = document.getElementById('div2-2')
+            let divtxt2 = document.getElementById('divtxt2-2')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 4: {
+            let div20 = document.getElementById('div2-3')
+            let divtxt2 = document.getElementById('divtxt2-3')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 5: {
+            let div20 = document.getElementById('div2-4')
+            let divtxt2 = document.getElementById('divtxt2-4')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 6: {
+            let div20 = document.getElementById('div2-5')
+            let divtxt2 = document.getElementById('divtxt2-5')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 7: {
+            let div20 = document.getElementById('div2-6')
+            let divtxt2 = document.getElementById('divtxt2-6')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 8: {
+            let div20 = document.getElementById('div2-7')
+            let divtxt2 = document.getElementById('divtxt2-7')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 9: {
+            let div20 = document.getElementById('div2-8')
+            let divtxt2 = document.getElementById('divtxt2-8')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 10: {
+            let div20 = document.getElementById('div2-9')
+            let divtxt2 = document.getElementById('divtxt2-9')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 11: {
+            let div20 = document.getElementById('div2-10')
+            let divtxt2 = document.getElementById('divtxt2-10')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 12: {
+            let div20 = document.getElementById('div2-11')
+            let divtxt2 = document.getElementById('divtxt2-11')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 13: {
+            let div20 = document.getElementById('div2-12')
+            let divtxt2 = document.getElementById('divtxt2-12')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 14: {
+            let div20 = document.getElementById('div2-13')
+            let divtxt2 = document.getElementById('divtxt2-13')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+        case 15: {
+            let div20 = document.getElementById('div2-14')
+            let divtxt2 = document.getElementById('divtxt2-14')
+            if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
+                div20.style.background = 'white'
+                div20.style.border = '3px solid gray'
+                escolhahora.forEach(div =>{
+                    div.style.background = 'white'
+                    div.style.textDecoration = 'none'
+                })
+            } else {
+                numEscolha2 = 0
+                escolhahora.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+            if (divtxt2.textContent === 'Sábado') {
+                const seisHoras = horaArray.slice(-4)
+                seisHoras.forEach(div =>{
+                    div.style.background = 'gray'
+                    div.style.textDecoration = 'line-through'
+                })
+            }
+        } break
+    }
+    let teste = document.getElementById('teste')
+    teste.innerHTML = numEscolha2
+}

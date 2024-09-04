@@ -18,10 +18,13 @@ div#cabeleleiro-escolha {
     box-sizing: border-box;   
     background-color: white;
     border: 2px solid white;
+    border-radius: 10px;
 }
 .escolha-cabe > img {
     width: 100%;
     height: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .escolha-cabetxt {
     background-color: transparent;
