@@ -1,3 +1,4 @@
+let Escolhas = []
 // SISTEMA DE SLIDES SERVIÇO
     document.getElementById('anterior').addEventListener('click', moveleft0)
     document.getElementById('posterior').addEventListener('click', moveright0)
@@ -28,6 +29,15 @@
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // SISTEMA DE ESCOLHA SERVIÇO
+function estiloEscolha0(valor) {
+    let div = document.getElementById(`div-${valor}`)
+    let txt = document.getElementById(`txt${valor}`)
+    div.style.border = '4px, solid, rgb(89, 83, 109)'
+    div.style.background = 'rgb(89, 83, 109)'
+    txt.style.background = 'rgb(89, 83, 109)'
+    txt.style.color = 'white'
+    txt.style.textDecoration = 'underline'
+}
 function Escolha0(numEscolha0) {
         
     let servDiv = document.getElementById('serviço-escolha')
@@ -47,69 +57,29 @@ function Escolha0(numEscolha0) {
     })
     switch (numEscolha0) {
         case 0: {
-            let div0 = document.getElementById('div-0')
-            let txt0 = document.getElementById('txt0')
-            div0.style.border = '4px, solid, rgb(89, 83, 109)'
-            div0.style.background = 'rgb(89, 83, 109)'
-            txt0.style.background = 'rgb(89, 83, 109)'
-            txt0.style.color = 'white'
-            txt0.style.textDecoration = 'underline'
+            estiloEscolha0(0)
         } break
         case 1: {
-            let div1 = document.getElementById('div-1')
-            let txt1 = document.getElementById('txt1')
-            div1.style.border = '4px, solid, rgb(89, 83, 109)'
-            div1.style.background = 'rgb(89, 83, 109)'
-            txt1.style.background = 'rgb(89, 83, 109)'
-            txt1.style.color = 'white'
-            txt1.style.textDecoration = 'underline'
+            estiloEscolha0(1)
         } break 
         case 2: {
-            let div2 = document.getElementById('div-2')
-            let txt2 = document.getElementById('txt2')
-            div2.style.border = '4px, solid, rgb(89, 83, 109)'
-            div2.style.background = 'rgb(89, 83, 109)'
-            txt2.style.background = 'rgb(89, 83, 109)'
-            txt2.style.color = 'white'
-            txt2.style.textDecoration = 'underline'
+            estiloEscolha0(2)
         } break 
         case 3: {
-            let div3 = document.getElementById('div-3')
-            let txt3 = document.getElementById('txt3')
-            div3.style.border = '4px, solid, rgb(89, 83, 109)'
-            div3.style.background = 'rgb(89, 83, 109)'
-            txt3.style.background = 'rgb(89, 83, 109)'
-            txt3.style.color = 'white'
-            txt3.style.textDecoration = 'underline'
+            estiloEscolha0(3)
         } break
         case 4: {
-            let div4 = document.getElementById('div-4')
-            let txt4 = document.getElementById('txt4')
-            div4.style.border = '4px, solid, rgb(89, 83, 109)'
-            div4.style.background = 'rgb(89, 83, 109)'
-            txt4.style.background = 'rgb(89, 83, 109)'
-            txt4.style.color = 'white'
-            txt4.style.textDecoration = 'underline'
+            estiloEscolha0(4)
         } break
         case 5: {
-            let div5 = document.getElementById('div-5')
-            let txt5 = document.getElementById('txt5')
-            div5.style.border = '4px, solid, rgb(89, 83, 109)'
-            div5.style.background = 'rgb(89, 83, 109)'
-            txt5.style.background = 'rgb(89, 83, 109)'
-            txt5.style.color = 'white'
-            txt5.style.textDecoration = 'underline'
+            estiloEscolha0(5)
         } break 
         case 6: {
-            let div6 = document.getElementById('div-6')
-            let txt6 = document.getElementById('txt6')
-            div6.style.border = '4px, solid, rgb(89, 83, 109)'
-            div6.style.background = 'rgb(89, 83, 109)'
-            txt6.style.background = 'rgb(89, 83, 109)'
-            txt6.style.color = 'white'
-            txt6.style.textDecoration = 'underline'
+            estiloEscolha0(6)
         } break
     }
+    Escolhas[0] = numEscolha0
+    updatetxt()
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // SISTEMA DE SLIDES PROFISSIONAL
@@ -139,6 +109,15 @@ function Escolha0(numEscolha0) {
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // SISTEMA DE ESCOLHAS PROFISSIONAL
+function estiloEscolha1(valor) {
+    let div = document.getElementById(`div1-${valor}`)
+    let txt = document.getElementById(`txt1-${valor}`)
+    div.style.border = '4px, solid, rgb(89, 83, 109)'
+    div.style.background = 'rgb(89, 83, 109)'
+    txt.style.background = 'rgb(89, 83, 109)'
+    txt.style.color = 'white'
+    txt.style.textDecoration = 'underline'
+}
 function Escolha1 (numEscolha1) {
     let funcDiv = document.getElementById('cabeleleiro-escolha')
     let escolhafunc = funcDiv.querySelectorAll('.escolha-cabe')
@@ -157,33 +136,19 @@ function Escolha1 (numEscolha1) {
     })
     switch(numEscolha1) {
         case 0: {
-            let div0 = document.getElementById('div1-0')
-            let txt0 = document.getElementById('txt1-0')
-            div0.style.border = '4px, solid, rgb(89, 83, 109)'
-            div0.style.background = 'rgb(89, 83, 109)'
-            txt0.style.background = 'rgb(89, 83, 109)'
-            txt0.style.color = 'white'
-            txt0.style.textDecoration = 'underline'
+            estiloEscolha1(0)
         } break
         case 1: {
-            let div1 = document.getElementById('div1-1')
-            let txt1 = document.getElementById('txt1-1')
-            div1.style.border = '4px, solid, rgb(89, 83, 109)'
-            div1.style.background = 'rgb(89, 83, 109)'
-            txt1.style.background = 'rgb(89, 83, 109)'
-            txt1.style.color = 'white'
-            txt1.style.textDecoration = 'underline'
+            estiloEscolha1(1)
         } break
         case 2: {
-            let div2 = document.getElementById('div1-2')
-            let txt2 = document.getElementById('txt1-2')
-            div2.style.border = '4px, solid, rgb(89, 83, 109)'
-            div2.style.background = 'rgb(89, 83, 109)'
-            txt2.style.background = 'rgb(89, 83, 109)'
-            txt2.style.color = 'white'
-            txt2.style.textDecoration = 'underline'
+            estiloEscolha1(2)
         } break
     }
+    let teste = document.getElementById('teste')
+    teste.innerHTML = numEscolha1
+    Escolhas[1] = numEscolha1
+    updatetxt()
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // SISTEMAS DE SLIDES DIAS
@@ -361,405 +326,448 @@ function Escolha1 (numEscolha1) {
             h1Element.style.textDecoration = 'line-through'
         }
     });
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// SISTEMA DE ESCOLHA DE DIAS    
-function Escolha2(numEscolha2) {
-    slide2 
-    let escolhadia = slide2.querySelectorAll('.dia-escolha')
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// SISTEMA DE ESCOLHA DE DIAS 
+function estiloEscolha2(valor) {
+    let div = document.getElementById(`div2-${valor - 1}`)
+    let divtxt = document.getElementById(`divtxt2-${valor - 1}`)
+    let escolhahora = document.querySelectorAll('.hora-escolha')
+        div.style.background = 'white'
+        div.style.border = '3px solid gray'
+        escolhahora.forEach(div => {
+            div.style.background = 'white'
+            div.style.textDecoration = 'none'
+        })   
+}
+function estiloDayBlocked() {
+    let escolhahora = document.querySelectorAll('.hora-escolha')
+    escolhahora.forEach(div => {
+        div.style.background = 'gray'
+        div.style.textDecoration = 'line-through'
+        div.style.border = '2px solid gray'
+    })
+}
+function estiloHourBlocked() {
     let escolhahora = document.querySelectorAll('.hora-escolha')
     let horaArray = Array.from(escolhahora)
+    let seisHoras = horaArray.slice(-4)
+    seisHoras.forEach(div =>{
+        div.style.background = 'gray'
+        div.style.textDecoration = 'line-through'
+    })
+
+}   
+function Escolha2(numEscolha2) {
+    let displayHora = document.querySelector('.container-escolha4')
+    displayHora.style.display = 'block'
+    let escolhadia = slide2.querySelectorAll('.dia-escolha')
     escolhadia.forEach((div, valor) => {
         div.style.background = 'gray'
         div.style.border = '4px solid rgb(148, 145, 145)'
         div.id = 'div2-' + (valor)
     })
-    
-    divtxt.forEach((h1, valor) =>{
+    divtxt.forEach((h1, valor) => {
         h1.id = 'divtxt2-' + (valor)
+    })
+    divnum.forEach((h3,valor) => {
+        h3.id = 'divnum2-' + (valor)
     })
     switch(numEscolha2) {
         case 1: {
-            let div20 = document.getElementById('div2-0')
             let divtxt2 = document.getElementById('divtxt2-0')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(1)
+                let divnum2 = document.getElementById('divnum2-0')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 2: {
-            let div20 = document.getElementById('div2-1')
             let divtxt2 = document.getElementById('divtxt2-1')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(2)
+                let divnum2 = document.getElementById('divnum2-1')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 3: {
-            let div20 = document.getElementById('div2-2')
             let divtxt2 = document.getElementById('divtxt2-2')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(3)
+                let divnum2 = document.getElementById('divnum2-2')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 4: {
-            let div20 = document.getElementById('div2-3')
             let divtxt2 = document.getElementById('divtxt2-3')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(4)
+                let divnum2 = document.getElementById('divnum2-3')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
-            }
-            if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 5: {
-            let div20 = document.getElementById('div2-4')
             let divtxt2 = document.getElementById('divtxt2-4')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(5)
+                let divnum2 = document.getElementById('divnum2-4')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 6: {
-            let div20 = document.getElementById('div2-5')
             let divtxt2 = document.getElementById('divtxt2-5')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(6)
+                let divnum2 = document.getElementById('divnum2-5')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 7: {
-            let div20 = document.getElementById('div2-6')
             let divtxt2 = document.getElementById('divtxt2-6')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(7)
+                let divnum2 = document.getElementById('divnum2-6')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
-                numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 8: {
-            let div20 = document.getElementById('div2-7')
             let divtxt2 = document.getElementById('divtxt2-7')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(8)
+                let divnum2 = document.getElementById('divnum2-7')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 9: {
-            let div20 = document.getElementById('div2-8')
             let divtxt2 = document.getElementById('divtxt2-8')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(9)
+                let divnum2 = document.getElementById('divnum2-8')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 10: {
-            let div20 = document.getElementById('div2-9')
             let divtxt2 = document.getElementById('divtxt2-9')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(10)
+                let divnum2 = document.getElementById('divnum2-9')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 11: {
-            let div20 = document.getElementById('div2-10')
             let divtxt2 = document.getElementById('divtxt2-10')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(11)
+                let divnum2 = document.getElementById('divnum2-10')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 12: {
-            let div20 = document.getElementById('div2-11')
             let divtxt2 = document.getElementById('divtxt2-11')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(12)
+                let divnum2 = document.getElementById('divnum2-11')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 13: {
-            let div20 = document.getElementById('div2-12')
             let divtxt2 = document.getElementById('divtxt2-12')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(13)
+                let divnum2 = document.getElementById('divnum2-12')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 14: {
-            let div20 = document.getElementById('div2-13')
             let divtxt2 = document.getElementById('divtxt2-13')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(14)
+                let divnum2 = document.getElementById('divnum2-13')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
         case 15: {
-            let div20 = document.getElementById('div2-14')
             let divtxt2 = document.getElementById('divtxt2-14')
             if (divtxt2.textContent != 'Domingo' && divtxt2.textContent != 'Segunda') {
-                div20.style.background = 'white'
-                div20.style.border = '3px solid gray'
-                escolhahora.forEach(div =>{
-                    div.style.background = 'white'
-                    div.style.textDecoration = 'none'
-                })
+                estiloEscolha2(15)
+                let divnum2 = document.getElementById('divnum2-14')
+                Escolhas[3] = divtxt2.textContent
+                Escolhas[4] = divnum2.textContent
             } else {
                 numEscolha2 = 0
-                escolhahora.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloDayBlocked()
             }
             if (divtxt2.textContent === 'Sábado') {
-                const seisHoras = horaArray.slice(-4)
-                seisHoras.forEach(div =>{
-                    div.style.background = 'gray'
-                    div.style.textDecoration = 'line-through'
-                })
+                estiloHourBlocked()
             }
         } break
     }
-    let teste = document.getElementById('teste')
-    teste.innerHTML = numEscolha2
+    Escolhas[2] = numEscolha2
+    updatetxt()
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////// SISTEMA DE ESCOLHAS DE HORAS
+
+function Escolha3(numEscolha3) {
+    let horas = document.querySelectorAll('.hora-escolha')
+    horas.forEach((div, valor) =>{
+        div.id = 'div3-' + valor
+    })
+    function estiloEscolha3(valor) {
+        let div = document.getElementById(`div3-${valor - 1}`)
+        let horas = document.querySelectorAll('.hora-escolha')
+        if (div.style.background == 'white') {
+            horas.forEach(div0 =>{
+                div0.style.background = 'white'
+                div0.style.border = '2px solid gray'
+                if (div0.style.textDecoration == 'line-through') {
+                    div0.style.background = 'gray'
+                }
+            })
+            div.style.background = 'rgb(89, 83, 109)'
+            div.style.border = '2px solid white'
+        } else {
+            horas.forEach(div0 =>{
+                div0.style.background = 'white'
+                div0.style.border = '2px solid gray'
+                if (div0.style.textDecoration == 'line-through') {
+                    div0.style.background = 'gray'
+                }
+            })
+            numEscolha3 = 0
+        }
+    }
+    switch(numEscolha3) {
+        case 1: {
+            let horasTxt = document.getElementById('div3-0')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(1)
+        } break
+        case 2: {
+            let horasTxt = document.getElementById('div3-1')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(2)
+        } break
+        case 3: {
+            let horasTxt = document.getElementById('div3-2')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(3)
+        } break
+        case 4: {
+            let horasTxt = document.getElementById('div3-3')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(4)
+        } break
+        case 5: {
+            let horasTxt = document.getElementById('div3-4')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(5)
+        } break
+        case 6: {
+            let horasTxt = document.getElementById('div3-5')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(6)
+        } break 
+        case 7: {
+            let horasTxt = document.getElementById('div3-6')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(7)
+        } break
+        case 8: {
+            let horasTxt = document.getElementById('div3-7')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(8)
+        } break
+        case 9: {
+            let horasTxt = document.getElementById('div3-8')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(9)
+        } break
+        case 10: {
+            let horasTxt = document.getElementById('div3-9')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(10)
+        } break
+        case 11: {
+            let horasTxt = document.getElementById('div3-10')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(11)
+        } break 
+        case 12: {
+            let horasTxt = document.getElementById('div3-11')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(12)
+        } break
+        case 13: {
+            let horasTxt = document.getElementById('div3-12')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(13)
+        } break 
+        case 14: {
+            let horasTxt = document.getElementById('div3-13')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(14)   
+        } break
+        case 15: {
+            let horasTxt = document.getElementById('div3-14')
+            Escolhas[6] = horasTxt.textContent
+            estiloEscolha3(15)
+        } break
+    }
+    Escolhas[5] = numEscolha3
+    updatetxt()
+}
+/////////////////////////////////////////////////////////////////////////////////////// SISTEMA DE CONFIRMAÇÃO DO PEDIDO
+function updatetxt() {
+    let escolha0 = document.getElementById('escolha0')
+    let escolha1 = document.getElementById('escolha1')
+    let escolha2 = document.getElementById('escolha2')
+    let escolha3 = document.getElementById('escolha3')
+    switch (Escolhas[0]) {
+        case 0: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte & Sombrancelha </strong>`
+        } break
+        case 1: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte</strong>`
+        } break
+        case 2: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte + Barba</strong>`
+        } break
+        case 3: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Platinado</strong>`
+        } break
+        case 4: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Relaxamento</strong>`
+        } break
+        case 5: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Luzes</strong>`
+        } break
+        case 6: {
+            escolha0.innerHTML = `O serviço escolhido foi <strong>Barba</strong>`
+        } break
+    }
+    switch (Escolhas[1]) {
+        case 0: {
+            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 1 </strong>`
+        } break
+        case 1: {
+            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 2 </strong>`
+        } break
+        case 2: {
+            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 3 </strong>`
+        } break
+    }
+    if (Escolhas[2] == 0) {
+        escolha2.innerHTML = '<strong>O dia escolhido está indisponível</strong>'
+        escolha2.style.color = 'red'
+    } else {
+        escolha2.style.color = 'black'
+        escolha2.innerHTML = `O serviço será realizado no dia <strong> ${Escolhas[4]} (${Escolhas[3]})`
+    }
+    if (Escolhas[5] == 0 || Escolhas[2] == 0) {
+        escolha3.innerHTML = '<strong> Informe a hora a ser realizada o serviço </strong>'
+        escolha3.style.color = 'red'
+        escolha3.style.textAlign = 'left'
+    } else if (Escolhas[5] !== undefined) {
+        escolha3.style.color = 'black'
+        escolha3.style.textAlign = 'center'
+        escolha3.innerHTML = `Às <strong>${Escolhas[6]}</strong>`
+    }
+}
+
+
+
