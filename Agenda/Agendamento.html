@@ -11,19 +11,17 @@
 </head>
 <body>
     <div id="navegadores">
-        <div id="logo-p">
-        <img src="../imagens/logo microsoft pequena (teste).png" alt="Logo da empresa" width="40px">
+        <img src="../imagens/Logo empresa EXEMPLO.jpg" alt="Logo da empresa" width="50px">
         <p>Nome da empresa</p>
-        </div>
         <nav>
         <a href="../Página principal/index.html" >Home</a>
-        <a href="#">Loja</a>
         <a href="#" id="pg-atual">Agende</a>
+        <a href="../Cadastro/login.html" id="user"><img src="../imagens/user.webp" alt="" width="35px"></a>
         </nav>
     </div>
     <header>
         <div id="logo-g">
-            <img src="../imagens/logo microsoft (teste).png" alt="Logo da empresa" width="400px">
+            <img src="../imagens/Logo empresa EXEMPLO.jpg" alt="Logo da empresa" width="400px">
         </div>
     </header>
     <main>
@@ -84,6 +82,7 @@
                 </div>
                 <button id="posterior-cabe">&#10095</button>
             </div>
+            <hr class="repartição">
             <h3>Escolha o Dia:</h3>
             <div class="container-escolha3">
                 <button id="anterior-dia">&#10094</button>
@@ -151,6 +150,7 @@
                 </div>
                 <button id="posterior-dia">&#10095</button>
             </div>
+            <hr class="repartição">
             <h3>Escolha a hora:</h3>
             <div class="container-escolha4">
                 <div class="hora-escolha" onclick="Escolha3(1)">8:00</div>
@@ -169,15 +169,16 @@
                 <div class="hora-escolha" onclick="Escolha3(14)">19:40</div>
                 <div class="hora-escolha" onclick="Escolha3(15)">20:30</div>
             </div>
+            <hr class="repartição">
             <div id="escolhas">
                 <h4>Confirme o seu pedido</h4>
                 <hr>
                 <h1 id="testes"></h1>
-                <p id="escolha0">O serviço escolhido foi</p>
-                <p id="escolha1">O cabeleleiro escolhido foi</p>
+                <p id="escolha0">O <strong>serviço</strong> escolhido foi</p>
+                <p id="escolha1">O <strong>cabeleleiro</strong> escolhido foi</p>
                 <hr>
-                <p id="escolha2">O serviço será realizado no dia </p>
-                <p id="escolha3">Às </p>
+                <p id="escolha2">O serviço será realizado no <strong>dia</strong> </p>
+                <p id="escolha3"><strong>Às</strong> </p>
                 <button id="confirmar">Confirmar</button>
             </div>
         </section>

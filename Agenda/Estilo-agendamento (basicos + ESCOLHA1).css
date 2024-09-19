@@ -27,15 +27,22 @@ div#navegadores{
     align-items: center;
     position: fixed;
     width: 99%;
-    height: 30px;
+    height: 35px;
     z-index: 50;
     transform: translate(0);
 }
 div#logo-p > p{
     align-items: center;
-    display: inline;
-    padding-left: 10px;
+    display: inline-block;
     font-size: 1.3rem;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    z-index: 50;
+    transform: translate(0);
 }
 nav > a{
     text-decoration: none;
@@ -51,8 +58,9 @@ nav > a:hover{
 }
 div#logo-g{
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
-
 main > h1 {
     text-align: center;
     font-size: 5rem;
@@ -74,7 +82,7 @@ section > h3 {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    
+    margin: 10px;
 }
 .container-escolha1 {
     position: relative;
@@ -88,6 +96,7 @@ section > h3 {
 div#serviço-escolha {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    
 }
 .escolha > img {
     display: block;
@@ -155,4 +164,46 @@ button#posterior {
     border-radius: 5px;
     cursor: pointer;
     z-index: 10;
+}
+div#escolhas {
+    width: 440px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+div#escolhas > h4 {
+    margin: 5px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+div#escolhas > p {
+    margin: 10px;
+    margin-top: 25px;
+    padding-left: 5px;
+    color: black;
+    font-size: 1.2rem;
+}
+p#escolha3 {
+    text-align: center;
+}
+button#confirmar {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 120px;
+    height: 80px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button#confirmar:hover {
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
 }

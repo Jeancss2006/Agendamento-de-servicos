@@ -145,8 +145,6 @@ function Escolha1 (numEscolha1) {
             estiloEscolha1(2)
         } break
     }
-    let teste = document.getElementById('teste')
-    teste.innerHTML = numEscolha1
     Escolhas[1] = numEscolha1
     updatetxt()
 }
@@ -719,36 +717,36 @@ function updatetxt() {
     let escolha3 = document.getElementById('escolha3')
     switch (Escolhas[0]) {
         case 0: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte & Sombrancelha </strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Corte & Sombrancelha </strong>`
         } break
         case 1: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Corte</strong>`
         } break
         case 2: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Corte + Barba</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Corte + Barba</strong>`
         } break
         case 3: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Platinado</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Platinado</strong>`
         } break
         case 4: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Relaxamento</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Relaxamento</strong>`
         } break
         case 5: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Luzes</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Luzes</strong>`
         } break
         case 6: {
-            escolha0.innerHTML = `O serviço escolhido foi <strong>Barba</strong>`
+            escolha0.innerHTML = `O <strong>serviço</strong> escolhido foi <strong>Barba</strong>`
         } break
     }
     switch (Escolhas[1]) {
         case 0: {
-            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 1 </strong>`
+            escolha1.innerHTML = `O <strong>cabeleleiro</strong> escolhido foi <strong> Cabeleleiro 1 </strong>`
         } break
         case 1: {
-            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 2 </strong>`
+            escolha1.innerHTML = `O <strong>cabeleleiro</strong> escolhido foi <strong> Cabeleleiro 2 </strong>`
         } break
         case 2: {
-            escolha1.innerHTML = `O cabeleleiro escolhido foi <strong> Cabeleleiro 3 </strong>`
+            escolha1.innerHTML = `O <strong>cabeleleiro</strong> escolhido foi <strong> Cabeleleiro 3 </strong>`
         } break
     }
     if (Escolhas[2] == 0) {
@@ -756,7 +754,7 @@ function updatetxt() {
         escolha2.style.color = 'red'
     } else {
         escolha2.style.color = 'black'
-        escolha2.innerHTML = `O serviço será realizado no dia <strong> ${Escolhas[4]} (${Escolhas[3]})`
+        escolha2.innerHTML = `O serviço será realizado no <strong>dia</strong> <strong> ${Escolhas[4]} (${Escolhas[3]})`
     }
     if (Escolhas[5] == 0 || Escolhas[2] == 0) {
         escolha3.innerHTML = '<strong> Informe a hora a ser realizada o serviço </strong>'
@@ -765,7 +763,7 @@ function updatetxt() {
     } else if (Escolhas[5] !== undefined) {
         escolha3.style.color = 'black'
         escolha3.style.textAlign = 'center'
-        escolha3.innerHTML = `Às <strong>${Escolhas[6]}</strong>`
+        escolha3.innerHTML = `<strong>Às</strong> <strong>${Escolhas[6]}</strong>`
     }
 }
 
