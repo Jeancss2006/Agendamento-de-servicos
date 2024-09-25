@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Jersey+10&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -7,11 +8,13 @@ html{
     font-family: "Moderustic", sans-serif;
 }
 body {
-    background-color: lightgray;
+    background-color: gray;
 }
 body > h1 {
     text-align: center;
     margin-top: 50px;
+    font-family: "Baskervville SC", serif;
+    color: white;
 }
 main {
     background-color: white;
@@ -28,6 +31,7 @@ main > h1 {
     text-align: center;
     font-size: 1.8rem;
     margin: 10px;
+    font-family: "Baskervville SC", serif;
 }
 main > h3 {
     margin: 15px;
@@ -40,13 +44,16 @@ main > input {
     margin-bottom: 20px;
     border-radius: 6px;
     border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 main > input:hover {
     border: 1px solid black;
 }
 main > input::placeholder {
-    padding-left: 10px;
     font-size: 1rem;
+    font-weight: normal;
 }
 main > p {
     color: lightslategray;
@@ -61,11 +68,10 @@ main > input#recuperar {
     right: 0;
     margin-right: 10px;
     background-color: rgba(0, 255, 123, 0.847);
+    cursor: pointer;
 }
 main > input#recuperar:hover{
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.659);
-    transform: translate(-2px, -2px);
-    transition: transform 0.25s, box-shadow 0.25s;
+    border: 1px solid black;
 }
 
 main > input#cancelar {
@@ -74,9 +80,8 @@ main > input#cancelar {
     position: absolute;
     right: 160px;
     margin-right: 10px;
+    cursor: pointer;
 }
 main > input#cancelar:hover{
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.659);
-    transform: translate(-2px, -2px);
-    transition: transform 0.25s, box-shadow 0.25s;
+    border: 1px solid black;
 }

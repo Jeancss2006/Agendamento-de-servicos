@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Jersey+10&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -19,14 +19,23 @@ div#navegadores{
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
+    height: 35px;
     width: 99%;
+    z-index: 50;
+    transform: translate(0);
 }
 div#logo-p > p{
     align-items: center;
-    display: inline;
-    padding-left: 10px;
+    display: inline-block;
     font-size: 1.3rem;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    z-index: 50;
+    transform: translate(0);
 }
 nav > a{
     text-decoration: none;
@@ -58,9 +67,9 @@ div#txt-loja {
     min-width: 300px;
 }
 div#txt-loja > h1 {
-    font-size: 3rem;
-    color: rgb(109, 109, 109);
+    font-size: 3.2rem;
     margin: 15px 15px 15px 0px;
+    font-family: "Baskervville SC", serif;
 }
 div#txt-loja > p {
     text-align: justify;
@@ -70,15 +79,16 @@ div#txt-loja > p {
 div#foto-da-loja {
     margin: 30px 0px 15px 30px;
     max-width: 450px;
-    min-width: 270px;
+    min-width: 400px;
     margin-left: 50px;
 }
-@media (max-width: 800px) {
+@media (max-width: 930px) {
     div#txt-loja {
         margin: 20px;
     }
     section#sec-loja {
         display: block;
+        max-width: 600px;
     }
     div#foto-da-loja {
         margin: 20px;
@@ -92,7 +102,8 @@ section#sec-agende{
 
 }
 section#sec-agende > h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: "Baskervville SC", serif;
 }
 section#sec-agende > a {
     text-decoration: none;

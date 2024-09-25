@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="Estilo-login.css">
 </head>
 <body>
-    <h1>LOGO DA EMPRESA</h1>
+    <h1>NOME DA EMPRESA</h1>
     <main>
         <h1>Login</h1>
         <hr>
-        <input type="email" placeholder="E-mail" id="first-input">
-        <input type="password" placeholder="Senha">
-        <input type="button" value="Entrar" id="entrar">
+        <input type="email" placeholder="E-mail" id="first-input" class="digitar">
+        <input type="password" placeholder="Senha" class="digitar">
+        <label for="conectar">
+            <input type="checkbox" name="conectado" id="conectar" value="sim">
+            Mantenha-me conectado.
+        </label>
+        <input type="button" value="Entrar" id="entrar" onclick="Entrar()">
         <a href="Nao-sabe-a-senha.html">Esqueceu sua senha?</a>
         <a href="cadastro.html" id="não-cadastro">Não sou cadastrado</a>
     </main>

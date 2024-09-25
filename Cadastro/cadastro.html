@@ -7,28 +7,20 @@
     <link rel="stylesheet" href="Estilo-cadastro.css">
 </head>
 <body>
-    <h1>LOGO DA EMPRESA</h1>
+    <h1>NOME DA EMPRESA</h1>
     <main>
         <h1>Faça o cadastro no site</h1>
         <hr>
         <input type="text" placeholder="Nome completo" id="first-input">
-        <input type="tel" placeholder="Telefone">
-        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Telefone" id="tel">
+        <input type="email" placeholder="E-mail" id="email">
         <h3>Digite sua senha:</h3>
         <input type="password" placeholder="Senha" id="senha">
         <input type="password" placeholder="Confirme sua senha" id="conf">
         <p id="mensagem">As senhas não coincidem!!</p>
         <input type="button" value="Cadastre-se" id="cadastrar" onclick="clicar()">
         <a href="login.html">Já tem uma conta?</a>
-        <script>
-            function clicar() {
-                var senha = window.document.querySelector('input#senha').value;
-                var conf = window.document.querySelector('input#conf').value;
-                if (senha !== conf) {
-                    window.document.querySelector('input#conf').style.border = '1px solid red'
-                    window.document.getElementById('mensagem').style.display = 'block'
-                }
-            }
+        <script src="script-cadastro.js">
         </script>
     </main>
 </body>

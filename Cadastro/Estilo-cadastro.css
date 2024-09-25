@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Jersey+10&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -8,11 +8,12 @@ html {
     font-family: "Moderustic", sans-serif;
 }
 body {
-    background-color: #F0F2F5;
+    background-color: gray;
 }
 body > h1 {
     text-align: center;
     margin: 10px 0px 0px 0px;
+    font-family: "Baskervville SC", serif;
 }
 main {
     background-color: white;
@@ -29,7 +30,8 @@ main > h1 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: black;
+    color: white;
+    font-family: "Baskervville SC", serif;
 }
 main > h3 {
     text-align: left;
@@ -42,10 +44,14 @@ main > input {
     border-radius: 6px;
     margin: 8px 15px;
     border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 main > input::placeholder {
     font-size: 1rem;
-    padding-left: 10px;
+    font-weight: normal;
+    
 }
 main > input:hover {
     border: 1px solid black;
@@ -63,6 +69,8 @@ main > input#cadastrar {
     border-radius: 10px;
     border: 2px solid lightgray;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.655);
+    padding-left: 0;
+    cursor: pointer;
 }
 main > input#cadastrar:hover{
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.779);
@@ -80,4 +88,7 @@ main > a {
     text-align: center;
     margin: 25px;
     color: blue;
+}
+main > a:hover {
+    color: black;
 }
